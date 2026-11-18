@@ -1,0 +1,9 @@
+node_modules/
+dist/
+*.tsbuildinfo
+bin/
+obj/
+.vs/
+*.user
+.env
+apps/web/screenshots/
