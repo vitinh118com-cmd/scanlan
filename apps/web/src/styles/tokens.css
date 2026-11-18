@@ -1,0 +1,51 @@
+/* HACHIHI Design System — tokens. Mọi màu/khoảng cách/bo góc/đổ bóng của giao diện đi qua file này. */
+:root {
+  /* Typography */
+  --font-sans: 'Inter Variable', Inter, 'Segoe UI', system-ui, -apple-system, Roboto, Arial, sans-serif;
+  --font-mono: 'JetBrains Mono Variable', 'JetBrains Mono', ui-monospace, Consolas, monospace;
+  --fs-xs: 11.5px; --fs-sm: 12.5px; --fs-md: 13.5px; --fs-lg: 15px; --fs-xl: 18px; --fs-2xl: 22px; --fs-kpi: 28px; --fs-hero: 44px;
+  --lh: 1.5;
+  /* Spacing (4px grid) */
+  --s-1: 4px; --s-2: 8px; --s-3: 12px; --s-4: 16px; --s-5: 20px; --s-6: 24px; --s-8: 32px; --s-10: 40px;
+  /* Radius */
+  --r-sm: 6px; --r-md: 8px; --r-lg: 12px; --r-full: 999px;
+  /* Motion */
+  --t-fast: 150ms; --t-base: 200ms; --ease: cubic-bezier(.2, .7, .2, 1);
+  /* Layout */
+  --sidebar-w: 248px; --sidebar-w-collapsed: 64px; --header-h: 56px;
+  color-scheme: dark;
+}
+/* Dark (mặc định) — nền xanh đen, bề mặt phân lớp */
+:root, :root[data-theme=dark] {
+  --bg: #090e17; --surface-1: #0e1521; --surface-2: #131c2b; --surface-3: #1a2538; --surface-hover: #172134;
+  --border: #1f2c42; --border-strong: #2b3b57;
+  --text: #e7edf7; --text-2: #a3b3cb; --text-3: #70829f;
+  --accent: #27bde9; --accent-hover: #4ccbf0; --accent-ink: #03141c; --accent-soft: rgba(39, 189, 233, .13); --accent-line: rgba(39, 189, 233, .45);
+  --ok: #34d399; --ok-soft: rgba(52, 211, 153, .13);
+  --warn: #fb923c; --warn-soft: rgba(251, 146, 60, .14);
+  --bad: #f87171; --bad-soft: rgba(248, 113, 113, .14);
+  --crit: #f43f5e; --crit-soft: rgba(244, 63, 94, .16); --crit-ink: #fff;
+  --info: #60a5fa; --info-soft: rgba(96, 165, 250, .14);
+  --shadow-1: 0 1px 0 rgba(255, 255, 255, .02) inset, 0 1px 2px rgba(0, 0, 0, .35);
+  --shadow-2: 0 12px 32px rgba(0, 0, 0, .5), 0 2px 6px rgba(0, 0, 0, .4);
+  --focus: 0 0 0 2px var(--bg), 0 0 0 4px var(--accent);
+  --grid-line: rgba(255, 255, 255, .045);
+  color-scheme: dark;
+}
+:root[data-theme=light] {
+  --bg: #f2f5f9; --surface-1: #ffffff; --surface-2: #f7f9fc; --surface-3: #edf1f7; --surface-hover: #f1f5fa;
+  --border: #dfe6ef; --border-strong: #c9d4e3;
+  --text: #0e1a2b; --text-2: #46586f; --text-3: #75869d;
+  --accent: #0a8fb3; --accent-hover: #087a99; --accent-ink: #ffffff; --accent-soft: rgba(10, 143, 179, .1); --accent-line: rgba(10, 143, 179, .45);
+  --ok: #059669; --ok-soft: rgba(5, 150, 105, .1);
+  --warn: #d9650a; --warn-soft: rgba(217, 101, 10, .1);
+  --bad: #dc2626; --bad-soft: rgba(220, 38, 38, .09);
+  --crit: #be123c; --crit-soft: rgba(190, 18, 60, .1); --crit-ink: #fff;
+  --info: #2563eb; --info-soft: rgba(37, 99, 235, .09);
+  --shadow-1: 0 1px 2px rgba(15, 30, 55, .06);
+  --shadow-2: 0 12px 32px rgba(15, 30, 55, .16), 0 2px 6px rgba(15, 30, 55, .08);
+  --grid-line: rgba(15, 30, 55, .06);
+  color-scheme: light;
+}
+/* Alias cho các trang chưa chuyển đổi (xoá dần khi redesign xong) */
+:root { --muted: var(--text-3); --line: var(--border); --brand: var(--accent); --panel: var(--surface-1); --panel2: var(--surface-2); --radius: var(--r-lg); }
